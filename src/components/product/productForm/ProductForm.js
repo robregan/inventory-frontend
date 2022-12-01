@@ -29,7 +29,7 @@ const ProductForm = ({
             />
             {imagePreview != null ? (
               <div className='image-preview'>
-                <img src={imagePreview} alt='product image' />
+                <img src={imagePreview} alt='product' />
               </div>
             ) : (
               <p>No image set for this product.</p>

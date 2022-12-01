@@ -12,7 +12,7 @@ const useRedirectLoggedOutUser = (path) => {
   useEffect(() => {
     const redirectLoggedOutUser = async () => {
       const isLoggedIn = await getLoginStatus()
-      dispatch(dispatch(SET_LOGIN(isLoggedIn)))
+      dispatch(SET_LOGIN(isLoggedIn))
       if (!isLoggedIn) {
         toast.info('Session expired, please login to continue')
         navigate(path)
